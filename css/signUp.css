@@ -1,0 +1,81 @@
+
+.login-main-box{
+    width: 40%;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    z-index: 1;
+}
+
+.login-close{
+    position: absolute;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.login-close:hover{
+    background-color: rgb(179, 176, 176);
+}
+
+.login-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 10px;
+    color: white;
+}
+
+.app-side{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(179, 176, 176);
+}
+
+.login-side{
+    padding: 20px;
+    background-color: black;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.icons div{
+    padding: 15px;
+}
+
+.icons span{
+    font-size: small;
+}
+
+.app-download{
+    display: flex;
+    font-size: smaller;
+}
+
+.app-download button{
+    margin-left: 10px;
+}
+
+.otp{
+    border-bottom: 2px solid orange;
+}
+
+.userId{
+    margin: 20px 0;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.continue-btn{
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+}
+
+
+

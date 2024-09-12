@@ -1,0 +1,292 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content-box{
+    width: 80%;
+    margin: auto; 
+    margin-top: 40px;
+    margin-bottom: 40px;   
+}
+
+.upperBanner,
+.lowerBanner{
+    border-radius: 20px;
+}
+
+.page-btn{
+    display: flex;
+}
+
+.meat-btn,
+.neu-btn,
+.ayurveda-btn,
+.buyAndSave-btn,
+.dealsOfWeek-btn,
+.combo-btn{
+    width: 170px;
+    margin-right: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.smart-basket,
+.best-sellers{
+    padding: 20px;
+    background-color: #F5F7F8;
+    margin-bottom: 50px;
+}
+
+.top-line{
+    display: flex;
+}
+
+.smart-basket-view{
+    position: absolute;
+    right: 0px;
+}
+
+.view-all{
+    color: #758694;
+}
+
+.smart-basket-angle-left,
+.smart-basket-angle-right{
+    margin-left: 20px;
+    padding: 5px;
+    width: 40px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.smart-basket-angle-left:hover{
+    border-style: solid;
+}
+
+.smart-basket-angle-right:hover{
+    border-style: solid;
+}
+
+.best-sellers-view{
+    position: absolute;
+    right: 0px;
+}
+
+.best-sellers-angle-left,
+.best-sellers-angle-right{
+    margin-left: 20px;
+    padding: 5px;
+    width: 40px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.best-sellers-angle-left:hover{
+    border-style: solid;
+}
+
+.best-sellers-angle-right:hover{
+    border-style: solid;
+}
+
+.card{
+    padding: 10px;
+}
+
+.card-btn{
+    display: flex;
+}
+
+.add{
+    margin-left: 10px;
+}
+
+.add-btn{
+    color: red;
+    background-color: white;
+}
+
+.add-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+.item-weight{
+    font-size: small;
+    margin-left: 10px;
+}
+
+.item-offer{
+    font-size: smaller;
+    color: #508D4E;
+    margin-left: 10px;
+}
+
+.real-price{
+    font-size: smaller;
+}
+
+.top-offers{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* width: 95%; */
+    margin: 0 auto;
+    column-gap: 15px;
+}
+
+.offer-card{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: red;
+    position: relative;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px #888888;
+}
+
+.offer-card:hover{
+    box-shadow: 1px 15px 25px #888888;
+}
+
+.offer-card-innerBox{
+    width: 245px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tag-line{
+    position: absolute;
+    top: -30px;
+    left: 40px;
+}
+
+.view-offer{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.view-offer-page{
+    color: black;
+}
+
+.line-1{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+.line-2{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.line-3{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.card-img{
+    width: 250px;
+}
+
+.snacks-card-img,
+.cleaning-household-img{
+    width: 280px;
+}
+
+
+
+.fruitsAndVegetables-card,
+.snacks-card,
+.cleaning-household-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.fruit-offer-card,
+.snacks-card-img,
+.cleaning-household-img{
+    box-shadow: 1px 5px 10px #888888;
+    margin-top: 30px;
+}
+
+.fruit-offer-card:hover{
+    box-shadow: 1px 15px 25px #888888;
+}
+
+.snacks-card-img:hover{
+    box-shadow: 1px 15px 25px #888888;
+}
+
+.cleaning-household-img:hover{
+    box-shadow: 1px 15px 25px #888888;
+}
+
+.offer-container,
+.fruitAndVegetable-container,
+.daily-staples-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.daily-staples-card-img,
+.beverages-card-img,
+.beautyAndHygiene-img,
+.homeAndKitchen-img{
+    width: 180px;
+}
+
+.daily-staples,
+.beverages-card,
+.beautyAndHygiene-card,
+.homeAndKitchen-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    column-gap: 15px;
+}
+
+.daily-staples-card-img,
+.beverages-card-img,
+.beautyAndHygiene-img,
+.homeAndKitchen-img{
+    box-shadow: 1px 5px 10px #888888;
+}
+
+.daily-staples-card-img:hover{
+     box-shadow: 1px 10px 20px #888888;
+}
+
+.beverages-card-img:hover{
+    box-shadow: 1px 10px 20px #888888;
+}
+
+.beautyAndHygiene-img:hover{
+    box-shadow: 1px 10px 20px #888888;
+}
+
+.homeAndKitchen-img:hover{
+    box-shadow: 1px 10px 20px #888888;
+}
+
+.lowerBanner-carousel{
+    margin: 50px 0;
+}
+
+.relevance-filter{
+    
+}
+
+.filters{
+
+}

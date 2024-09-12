@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/bigbasket-logo-CCFD652568-seeklogo.com.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/826be29b86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/headerAndFooter.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main-box">
+          <div class="inner-box">
+            <div class="navbar-banner">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="/html/home.html">
+                        <img class="logo" src="../images/BigBasket_Logo.png" alt="">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <form class="d-flex">
+                        <input class="form-control me-2 search-bar" type="search" placeholder="Search for Products..." aria-label="Search">
+                      </form>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <button class="location-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg> Select Location</button>
+                          <button onclick="viewSignup()" class="login-btn">Login / Sign Up</button>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+                <div class="navbar-row">
+                    <div class="category">
+                        <button class="category-btn">Shop by Category <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></button>
+                    </div>
+                    <div class="exotic-vegetable">
+                      <a  class="exotic-vegetable-link" href="../html/exoticVegitableAndFruits.html">Exotic Fruits & V...</a>
+                      <div class="exotic-vegetable-link-style"></div>
+                    </div>
+                    <div class="tea">
+                        <a class="tea-link" href="../html/tea.html">Tea</a>
+                        <div class="tea-link-style"></div>
+                    </div>
+                    <div class="ghee">
+                        <a class="ghee-link" href="../html/ghee.html">Ghee</a>
+                        <div class="ghee-link-style"></div>
+                    </div>
+                    <div class="nandini">
+                      <a class="nandini-link" href="../html/nandini.html">Nandini</a>
+                      <div class="nandini-link-style"></div>
+                    </div>
+                    <div class="fresh-vegetable">
+                        <a class="fresh-vegetable-link" href="../html/freshVegetables.html">Fresh Vegetables</a>
+                        <div class="fresh-vegetable-link-style"></div>
+                    </div>
+                    <div class="more-items">
+                      <button onclick="viewItem()" class="btn"> >> </button>
+                      <div class="more-items-window">
+                        <button onclick="closeItem()" class="btn close-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+                        <a href="">Milk</a>
+                        <a href="">Yogurt & Shrikhand</a>
+                        <a href="">Chocolate</a>
+                        <a href="">Cup Noodles</a>
+                        <a href="">Hair Care</a>
+                        <a href="">Fresh Chicken</a>
+                        <a href="">Eggs</a>
+                        <a href="">Honey</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="login-main-box">
+                <button onclick="closeSignup()" class="btn login-close"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+                <div class="login-window">
+                    <div class="login-box border border-dark">
+                        <div class="app-side">
+                            <p>Why choose Bigbasket?</p>
+                            <div class="icons">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M120 0l80 0c13.3 0 24 10.7 24 24l0 40L96 64l0-40c0-13.3 10.7-24 24-24zM32 167.5c0-19.5 10-37.6 26.6-47.9l15.8-9.9C88.7 100.7 105.2 96 122.1 96l75.8 0c16.9 0 33.4 4.7 47.7 13.7l15.8 9.9C278 129.9 288 148 288 167.5c0 17-7.5 32.3-19.4 42.6C280.6 221.7 288 238 288 256c0 19.1-8.4 36.3-21.7 48c13.3 11.7 21.7 28.9 21.7 48s-8.4 36.3-21.7 48c13.3 11.7 21.7 28.9 21.7 48c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64c0-19.1 8.4-36.3 21.7-48C40.4 388.3 32 371.1 32 352s8.4-36.3 21.7-48C40.4 292.3 32 275.1 32 256c0-18 7.4-34.3 19.4-45.9C39.5 199.7 32 184.5 32 167.5zM96 240c0 8.8 7.2 16 16 16l96 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-96 0c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16l96 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-96 0z"/></svg><br>
+                                    <span>Quality</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg><br>
+                                    <span>On time</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 160l-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l16 0 176 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 224l-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 144 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 288l0 128c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L112 0zM544 237.3l0 18.7-128 0 0-96 50.7 0L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg><br>
+                                    <span>Return Policy</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M125.7 160l50.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L48 224c-17.7 0-32-14.3-32-32L16 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"/></svg><br>
+                                    <span>Free Delivery</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="app-download">
+                                <div>Find us on</div>
+                                <div>
+                                    <div>
+                                        <button class="btn border border-dark"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg></button>
+                                        <button class="btn border border-dark"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-side">
+                            <h1>Login/ Sign up</h1>
+                            <span class="otp">Using OTP</span><br>
+                            <input class="userId" type="text" placeholder="Enter phone no/ Email id ">
+                            <button class="continue-btn btn bg-danger ">Continue</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+          <div class="content-box">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Warm</button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Upto</button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Upto</button>
+                </div>
+                <div class="carousel-inner upperBanner">
+                  <div class="carousel-item active">
+                    <img src="../images/banner /upperBanner1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/banner /upperBanner2.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/banner /upperBanner3.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+            </div>
+
+            <div class="page-btn">
+                <div>
+                    <a href=""><img class="meat-btn" src="../images/btn/hp_topstrip_m_250923_01.webp" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img class="neu-btn" src="../images/btn/hp_topstrip_m_250923_02.webp" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img class="ayurveda-btn" src="../images/btn/hp_topstrip_m_250923_03.webp" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img class="buyAndSave-btn" src="../images/btn/hp_topstrip_m_250923_04.webp" alt=""></a>
+                </div>
+                <div>
+                  <a href=""><img class="dealsOfWeek-btn" src="../images/btn/hp_topstrip_m_250923_05.webp" alt=""></a>
+                </div>
+                <div>
+                  <a href=""><img class="combo-btn" src="../images/btn/hp_topstrip_m_250923_06.webp" alt=""></a>
+                </div>
+            </div>
+
+            <div class="smart-basket">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="top-line">
+                  <div class="smart-basket-heading">
+                    <h3>My Smart Basket</h3>
+                  </div>
+                  <div class="smart-basket-view">
+                    <a class="view-all" href="">View All</a>
+                    <button class="smart-basket-angle-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                    </button>
+                    <button class="smart-basket-angle-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="smart-basket-cards row gap-2">
+                      <div class="card col" style="width: 18rem;">
+                        <img class="capsicum-green-card" src="../images/vegetables/capsicum-green.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Capsicum - Green (Loose)</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              1 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">500 g</span><br>
+                                <span class="item-offer">27% OFF</span>
+                                <span><strong>&#8377;21</strong> <del class="real-price">&#8377; 28.77</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">250 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;11.45</strong> <del class="real-price">&#8377; 15.07</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">36% OFF</span>
+                                <span><strong>&#8377;60</strong> <del class="real-price">&#8377; 93.15</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;60  &#8377;<del>93.15</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/vegetables/carrot-orange.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Carrot - Orange (Loose)</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              1 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">250 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;13.54</strong> <del class="real-price">&#8377; 17.81</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">500 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;24.99</strong> <del class="real-price">&#8377; 32.88</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">40% OFF</span>
+                                <span><strong>&#8377;76</strong> <del class="real-price">&#8377; 126.03</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;76  &#8377;<del>126.03</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/vegetables/cauliflower.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Cauliflower</p>
+                          <!-- <div class="dropdown"> -->
+                          <p>1 pc-(approx. 400 to 600 g)</p>
+                            <div class="price"> 
+                              &#8377;27  &#8377;<del>65.75</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          <!-- </div> -->
+                        </div>
+                      </div>
+
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/vegetables/coriander-leaves.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Coriander Leaves</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              1 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">250 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;17.7</strong> <del class="real-price">&#8377; 23.29</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">100 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;33.32</strong> <del class="real-price">&#8377; 43.84</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">500 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;61.42</strong> <del class="real-price">&#8377; 80.82</del></span>
+                              </li>
+
+                              <li class="">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;254.03</strong> <del class="real-price">&#8377; 334.25</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;254.03  &#8377;<del>334.25</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>  
+
+              
+                  <div class="carousel-item">  
+                    <div class="smart-basket-cards row gap-2">
+                      <div class="card col" style="width: 18rem;">
+                        <img class="capsicum-green-card" src="../images/vegetables/cucumber.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Cucumber</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              10 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">300 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;14.16</strong> <del class="real-price">&#8377; 18.63</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">500 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;15.62</strong> <del class="real-price">&#8377; 20.55</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">46% OFF</span>
+                                <span><strong>&#8377;28</strong> <del class="real-price">&#8377; 52.05</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;490  
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/vegetables/ladies-finger.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Ladies' Fingers</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              1 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">500 g</span><br>
+                                <span class="item-offer">58% OFF</span>
+                                <span><strong>&#8377;11.4</strong> <del class="real-price">&#8377; 27.4</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">250 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;11.4</strong> <del class="real-price">&#8377; 15</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">58% OFF</span>
+                                <span><strong>&#8377;24</strong> <del class="real-price">&#8377; 57.53</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;24  &#8377;<del>57.53</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/vegetables/onion.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Onion</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              5 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">44% OFF</span>
+                                <span><strong>&#8377;54</strong> <del class="real-price">&#8377; 97.26</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">500 g</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;10</strong> <del class="real-price">&#8377; 13.26</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">2 kg</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;64.55</strong> <del class="real-price">&#8377; 84.93</del></span>
+                              </li>
+
+                              <li class="">
+                                <span class="item-weight">2 kg - Multipack</span><br>
+                                <span class="item-offer">44% OFF</span>
+                                <span><strong>&#8377;108</strong> <del class="real-price">&#8377; 194.52</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;270  &#8377;<del>486.3</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/vegetables/potato-fresh-crop.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Coriander Leaves</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              5 kg
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">2 kg</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;56.22</strong> <del class="real-price">&#8377; 73.97</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">1 kg</span><br>
+                                <span class="item-offer">26% OFF</span>
+                                <span><strong>&#8377;50</strong> <del class="real-price">&#8377; 67.12</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">5 kg</span><br>
+                                <span class="item-offer">24% OFF</span>
+                                <span><strong>&#8377;144.4</strong> <del class="real-price">&#8377; 199</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;144.4  &#8377;<del>190</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div class="best-sellers">
+              <div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
+                <div class="top-line">
+                  <div class="smart-basket-heading">
+                    <h3>Best Sellers</h3>
+                  </div>
+                  <div class="smart-basket-view">
+                    <a class="view-all" href="">View All</a>
+                    <button class="smart-basket-angle-left" type="button" data-bs-target="#carouselExampleControl" data-bs-slide="prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                    </button>
+                    <button class="smart-basket-angle-right" type="button" data-bs-target="#carouselExampleControl" data-bs-slide="next">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                    </button>
+                  </div>
+                </div>
+                
+                
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="smart-basket-cards row gap-2">
+                      <div class="card col" style="width: 18rem;">
+                        <img class="capsicum-green-card" src="../images/baby/baby-wipes-with-aloe-vera-jojoba-oil-vitamin-e.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Littles</span>
+                          <p class="item-name">Baby Wipes - With Aloe Vera, Jojoba Oil & Vitamin E</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              5x80 pcs - Multipack
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">80 pcs</span><br>
+                                <span class="item-offer">48% OFF</span>
+                                <span><strong>&#8377;99</strong> <del class="real-price">&#8377; 190</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">2x80 pcs - Multipack</span><br>
+                                <span class="item-offer">48% OFF</span>
+                                <span><strong>&#8377;198</strong> <del class="real-price">&#8377; 380</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">3x80 pcs - Multipack</span><br>
+                                <span class="item-offer">36% OFF</span>
+                                <span><strong>&#8377;297</strong> <del class="real-price">&#8377; 570</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;485  &#8377;<del>950</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/baby/baby-wipes-fresh-no-paraben-double-moisturizing.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Bigbasket</span>
+                          <p class="item-name">Baby Wipes - Fresh, No Paraben, Double Moisturizing</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              2x80 pcs - Multipack
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">80 pcs</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;109</strong> <del class="real-price">&#8377; 199</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">2x80 pcs - Multipack</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;218</strong> <del class="real-price">&#8377; 398</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">3x80 pcs - Multipack</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;327</strong> <del class="real-price">&#8377; 597</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;218  &#8377;<del>398</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/baby/pampers-baby-wipes-with-aloe.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Pampers</span>
+                          <p class="item-name">Baby Wipes - With Aloe</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              72 pcs
+                             </button>
+                             <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                               <li class="border-bottom border-secondary">
+                                 <span class="item-weight">72 pcs</span><br>
+                                 <span class="item-offer">39% OFF</span>
+                                 <span><strong>&#8377;182</strong> <del class="real-price">&#8377; 299</del></span>
+                               </li>
+                               <li class="border-bottom border-secondary">
+                                 <span class="item-weight">72 pcs - (Pack of 2)</span><br>
+                                 <span class="item-offer">30% OFF</span>
+                                 <span><strong>&#8377;348.6</strong> <del class="real-price">&#8377; 498</del></span>
+                               </li>
+                             </ul>
+                             <div class="price"> 
+                               &#8377;182  &#8377;<del>299</del>
+                             </div>
+                             <div class="card-btn">
+                               <div class="save">
+                                 <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                               </div>
+                               <div class="add w-100">
+                                 <button class="add-btn border border-danger rounded w-100">Add</button>
+                               </div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/baby/baby-wipes-cherry-blossom-no-paraben-double-moisturizing.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Bigbasket</span>
+                          <p class="item-name">Baby Wipes - Cherry Blossom, No Paraben, Double Moisturising</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              80 pcs
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">80 pcs</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;109</strong> <del class="real-price">&#8377; 199</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">2x80 pcs - Multipack</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;218</strong> <del class="real-price">&#8377; 398</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">3x80 pcs - Multipack</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;327</strong> <del class="real-price">&#8377; 597</del></span>
+                              </li>
+          
+                            </ul>
+                            <div class="price"> 
+                              &#8377;109  &#8377;<del>199</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>  
+
+              
+                  <div class="carousel-item">  
+                    <div class="smart-basket-cards row gap-2">
+                      <div class="card col" style="width: 18rem;">
+                        <img class="capsicum-green-card" src="../images/baby/baby-wipes-sea-breeze-no-paraben-double-moisturizing.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Bigbasket</span>
+                          <p class="item-name">Baby Wipes - Sea Breeze, No Paraben, Double Moisturizing</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              2x80 - Multipack
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">80 pcs</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;109</strong> <del class="real-price">&#8377; 199</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">2x80 - Multipack</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;218</strong> <del class="real-price">&#8377; 398</del></span>
+                              </li>
+                              <li class="">
+                                <span class="item-weight">3x80 pcs - Multipack</span><br>
+                                <span class="item-offer">45% OFF</span>
+                                <span><strong>&#8377;327</strong> <del class="real-price">&#8377; 597</del></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;218  &#8377;<del>398</del> 
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/baby/ittles-baby-diaper-pants-xl-with-wetness-indicator-12-hours-absorption.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Littles</span>
+                          <p class="item-name">Baby Diaper Pants - XL, With Wetness Indicator & 12 Hours</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              2x24 pcs - (Multipack)
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">24 pcs</span><br>
+                                <span class="item-offer">32% OFF</span>
+                                <span><strong>&#8377;305</strong> <del class="real-price">&#8377; 449</del></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">2x24 pcs - (Multipack)</span><br>
+                                <span class="item-offer">32% OFF</span>
+                                <span><strong>&#8377;610</strong> <del class="real-price">&#8377; 898</del></span>
+                              </li>
+                              
+                            </ul>
+                            <div class="price"> 
+                              &#8377;610  &#8377;<del>898</del>
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/baby/chicco-cleansing-wipes-soft-baby-moments.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">Chicco</span>
+                          <p class="item-name">Baby Moments - Soft Cleansing Wipes, With Aloe Vera,</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              20 pcs
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">72 pcs - Fliptop</span><br>
+                                <span><strong>&#8377;219</strong> </span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">20 pcs</span><br>
+                                <span><strong>&#8377;75</strong> </span>
+                              </li>
+                          
+                            </ul>
+                            <div class="price"> 
+                              &#8377;75 
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card col" style="width: 18rem;">
+                        <img src="../images/baby/bodyguard-premium-baby-wet-wipes-with-aloe-vera-paraben-free.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="company-name">fresho!</span>
+                          <p class="item-name">Coriander Leaves</p>
+                          <div class="dropdown">
+                            <button class="btn w-100 dropdown-toggle border border-dark text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                             72 Pulls - Pack of 2
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">72 Pulls</span><br>
+                                <span><strong>&#8377;125</strong></span>
+                              </li>
+                              <li class="border-bottom border-secondary">
+                                <span class="item-weight">72 Pulls - Pack of 2</span><br>                   
+                                <span><strong>&#8377;250</strong></span>
+                              </li>
+                            </ul>
+                            <div class="price"> 
+                              &#8377;250
+                            </div>
+                            <div class="card-btn">
+                              <div class="save">
+                                <button class="save-btn border border-dark rounded bg-light"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg></button>
+                              </div>
+                              <div class="add w-100">
+                                <button class="add-btn border border-danger rounded w-100">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="offer-container">
+              <h3>Top Offers</h3>
+              <div class="top-offers">
+                <div class="offer-card">
+                  <div class="offer-card-innerBox">
+                    <div class="tag-line">
+                      <span class="line-1">DEALS OF</span><br>
+                      <span class="line-2">THE WEEK</span>
+                    </div>
+                    <div class="view-offer">
+                      <a class="view-offer-page" href="">view offers ></a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="offer-card">
+                  <div class="offer-card-innerBox">
+                    <div class="tag-line">
+                      <span class="line-1">BIG PACK</span><br>
+                      <span class="line-2">BIGGER</span><br>
+                      <span class="line-3">BIGGER DISCOUNT</span>
+                    </div>
+                    <div class="view-offer">
+                      <a class="view-offer-page" href="">view offers ></a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="offer-card">
+                  <div class="offer-card-innerBox">
+                    <div class="tag-line">
+                      <span class="line-1">COMBOS</span><br>
+                      <span class="line-2">YOU</span><br>
+                      <span class="line-3">CAN'T MISS</span>
+                    </div>
+                    <div class="view-offer">
+                      <a class="view-offer-page" href="">view offers ></a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="offer-card">
+                  <div class="offer-card-innerBox">
+                    <div class="tag-line">
+                      <span class="line-1">THE</span><br>
+                      <span class="line-2">&#8377;30 CORNER</span>
+                    </div>
+                  </div>
+                  <div class="view-offer">
+                    <a class="view-offer-page" href="">view offers ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fruitAndVegetable-container">
+              <h3>Fruits and Vegetables</h3>
+              <div class="fruitsAndVegetables-card">
+                <div class="fruit-offer-card">
+                    <img class="card-img" src="../images/fruitsAndVegetables/hp_f&v_m_fresh-vegetables_480_250923.webp" alt="">
+                </div>
+
+                <div class="fruit-offer-card">
+                  <img class="card-img" src="../images/fruitsAndVegetables/hp_f&v_m_fresh-fruits_480_250923.webp" alt="">
+               </div>
+
+                <div class="fruit-offer-card">
+                  <img class="card-img" src="../images/fruitsAndVegetables/hp_f&v_m_cuts-&-exotics_480_250923.webp" alt="">
+                </div>
+
+                <div class="fruit-offer-card">
+                  <img class="card-img" src="../images/fruitsAndVegetables/hp_f&v_m_herbs-&-seasoning_480_250923.webp" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="daily-staples-container">
+              <h3>Your Daily Staples</h3>
+              <div class="daily-staples">
+                <div class="daily-staples-card">
+                  <img class="daily-staples-card-img" src="../images/dailyStaples/hp_atta-flour-staplesStorefront_m_480_250323_01.webp" alt="">
+                </div>
+
+                <div class="daily-staples-card">
+                  <img class="daily-staples-card-img" src="../images/dailyStaples/hp_rice-staplesStorefront_m_480_250323_02.webp" alt="">
+                </div>
+
+                <div class="daily-staples-card">
+                  <img class="daily-staples-card-img" src="../images/dailyStaples/hp_dals-pulses-staplesStorefront_m_480_250323_03.webp" alt="">
+                </div>
+
+                <div class="daily-staples-card">
+                  <img class="daily-staples-card-img" src="../images/dailyStaples/hp_cooking-oils-staplesStorefront_m_480_250323_04.webp" alt="">
+                </div>
+
+                <div class="daily-staples-card">
+                  <img class="daily-staples-card-img" src="../images/dailyStaples/hp_dry-fruits-staplesStorefront_m_480_250323_05.webp" alt="">
+                </div>
+
+                <div class="daily-staples-card">
+                  <img class="daily-staples-card-img" src="../images/dailyStaples/hp_salt-staplesStorefront_m_480_250323_06.webp" alt="">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="beverages-container">
+              <h3>Beverages</h3>
+              <div class="beverages-card">
+                <div class="beverages-offers">
+                  <img class="beverages-card-img" src="../images/beverages/hp_bev_m_energy-drinks_480_250923.webp" alt="">
+                </div>
+
+                <div class="beverages-offers">
+                  <img class="beverages-card-img" src="../images/beverages/hp_bev_m_flavoured-&-soya-milk_480_250923.webp" alt="">
+                </div>
+
+                <div class="beverages-offers">
+                  <img class="beverages-card-img" src="../images/beverages/hp_bev_m_health-drinks-&-supplements_480_250923.webp" alt="">
+                </div>
+
+                <div class="beverages-offers">
+                  <img class="beverages-card-img" src="../images/beverages/hp_bev_m_juices_480_250923.webp" alt="">
+                </div>
+
+                <div class="beverages-offers">
+                  <img class="beverages-card-img" src="../images/beverages/hp_bev_m_soft-drinks-&-more_480_250923.webp" alt="">
+                </div>
+
+                <div class="beverages-offers">
+                  <img class="beverages-card-img" src="../images/beverages/hp_bev_m_tea-&-coffee_480_250923.webp" alt="">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snacks-container">
+              <h3>Snacks Store</h3>
+              <div class="snacks-card">
+                <div class="snacks-offers">
+                  <img src="../images/snacks/hp_sbf_m_biscuits-&-namkeens_480_250923.webp" alt="" class="snacks-card-img">
+                </div>
+
+                <div class="snacks-offers">
+                  <img src="../images/snacks/hp_sbf_m_breakfast-cereals_480_250923.webp" alt="" class="snacks-card-img">
+                </div>
+
+                <div class="snacks-offers">
+                  <img src="../images/snacks/hp_sbf_m_pasta-sauces-&-more_480_270723.webp" alt="" class="snacks-card-img">
+                </div>
+
+                <div class="snacks-offers">
+                  <img src="../images/snacks/hp_sbf_m_sweet-cravings_480_250923.webp" alt="" class="snacks-card-img">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cleaningAndHousehold-container">
+              <h3>Cleaning & Household</h3>
+              <div class="cleaning-household-card">
+                <div class="cleaning-household-offers">
+                  <img src="../images/cleaningAndHousehold/hp_c&h_m_cleaners_480_250723.webp" alt="" class="cleaning-household-img">
+                </div>
+
+                <div class="cleaning-household-offers">
+                  <img src="../images/cleaningAndHousehold/hp_c&h_m_detergents-&-fabric-care_480_250723.webp" alt="" class="cleaning-household-img">
+                </div>
+
+                <div class="cleaning-household-offers">
+                  <img src="../images/cleaningAndHousehold/hp_c&h_m_freshner_480_250723.webp" alt="" class="cleaning-household-img">
+                </div>
+
+                <div class="cleaning-household-offers">
+                  <img src="../images/cleaningAndHousehold/hp_c&h_m_paper-disposables-&-garbage-bags_480_250723.webp" alt="" class="cleaning-household-img">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="beautyAndHygiene-container">
+              <h3>Beauty and hygiene</h3>
+              <div class="beautyAndHygiene-card">
+                <div class="beautyAndHygiene-offers">
+                  <img src="../images/beautyAndHygiene/hp_b&h_m_-makeup_480_250923.webp" alt="" class="beautyAndHygiene-img">
+                </div>
+
+                <div class="beautyAndHygiene-offers">
+                  <img src="../images/beautyAndHygiene/hp_b&h_m_big-pack-bigger-saving bf_480_250923.webp" alt="" class="beautyAndHygiene-img">
+                </div>
+
+                <div class="beautyAndHygiene-offers">
+                  <img src="../images/beautyAndHygiene/hp_b&h_m_mens-shaving_480_250923.webp" alt="" class="beautyAndHygiene-img">
+                </div>
+
+                <div class="beautyAndHygiene-offers">
+                  <img src="../images/beautyAndHygiene/hp_b&h_m_minimum-30-off_480_250923.webp" alt="" class="beautyAndHygiene-img">
+                </div>
+
+                <div class="beautyAndHygiene-offers">
+                  <img src="../images/beautyAndHygiene/hp_b&h_m_moisturiser_480_250923.webp" alt="" class="beautyAndHygiene-img">
+                </div>
+
+                <div class="beautyAndHygiene-offers">
+                  <img src="../images/beautyAndHygiene/hp_b&h_m_perfumes_480_250923.webp" alt="" class="beautyAndHygiene-img">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="homeAndKitchen-container">
+              <h3>Home and Kitchen</h3>
+              <div class="homeAndKitchen-card">
+                <div class="homeAndKitchen-offers">
+                  <img src="../images/homeAndKitchen/hp_GMunder-99_m_250723_01.webp" alt="" class="homeAndKitchen-img">
+                </div>
+
+                <div class="homeAndKitchen-offers">
+                  <img src="../images/homeAndKitchen/hp_GM100-199_m_250723_02.webp" alt="" class="homeAndKitchen-img">
+                </div>
+
+                <div class="homeAndKitchen-offers">
+                  <img src="../images/homeAndKitchen/hp_GMStorefront-pressure-cooker_m_250723_03.webp" alt="" class="homeAndKitchen-img">
+                </div>
+
+                <div class="homeAndKitchen-offers">
+                  <img src="../images/homeAndKitchen/hp_GMStorefront-stationery-store_m_250723_04.webp" alt="" class="homeAndKitchen-img">
+                </div>
+
+                <div class="homeAndKitchen-offers">
+                  <img src="../images/homeAndKitchen/hp_GM-storage-container_m_250723_05.webp" alt="" class="homeAndKitchen-img">
+                </div>
+
+                <div class="homeAndKitchen-offers">
+                  <img src="../images/homeAndKitchen/hp_GM-cleaning-needs_m_250723_06.webp" alt="" class="homeAndKitchen-img">
+                </div>
+              </div>
+            </div>
+
+            <div class="lowerBanner-carousel">
+              <div id="carouselExampleControls-lowerBanner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner lowerBanner">
+                  <div class="carousel-item active">
+                    <img src="../images/banner /hp_bcd_m_bcd_250923_400.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/banner /hp_m_babycare_250923_400.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/banner /hp_m_health_suppliment_250923_400.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/banner /hp_m_petstore_250923_400.jpg.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-lowerBanner" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-lowerBanner" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="about-us">
+              <strong>bigbasket – online grocery store</strong>
+              <p>Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million satisfied customers. From essential household cleaning products to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.</p>
+              <p>In these times, we've eliminated the stress associated with shopping for daily essentials. You can now effortlessly order all your household products and groceries online. Plus, the added convenience of finding all your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks.</p>
+              <p>We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your groceries, snacks and branded foods reach you on time.</p>
+              <p>Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every schedule.</p>
+              <p>Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities.</p>
+              <p>Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This service exemplifies our commitment to providing you with not just the widest range of products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your immediate grocery needs.</p>            
+            </div>
+
+          </div>
+          <footer>
+              <div class="footer-items">
+                <div class="item-box-1">
+                  <p>Bigbasket</p>
+                  <p>About Us</p>
+                  <p>Become a bigbasket Rider</p>
+                  <p>In News</p>
+                  <p>Green bigbasket</p>
+                  <p>Privacy Policy</p>
+                  <p>Terms and Conditions</p>
+                  <p>Careers At bigbasket</p>
+                  <p>bb Instant</p>
+                  <p>bb Daily</p>
+                  <p>bb Blog</p>
+                  <p>bbnow</p>
+                </div>
+
+                <div class="item-box-2">
+                  <p>Help</p>
+                  <p>FAQs</p>
+                  <p>Contact Us</p>
+                  <p>bb Wallet FAQs</p>
+                  <p>bb Wallet T&Cs</p>
+                  <p>Vendor Connect</p>
+                </div>
+
+                <div class="item-box-3">
+                  <div class="bb-logo">
+                    <img src="../images/BigBasket_Logo.png" alt="" class="footer-logo">
+                  </div>
+                  
+                  <div class="app-download">
+                    <div class="play-store">
+                      <button class="play-store-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg> Google Play</button>
+                    </div>
+                    <div class="app-store">
+                      <button class="app-store-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> App Store</button>
+                    </div>
+                  </div>
+
+                  <div class="social-media">
+                    <a href="" class="social-media-platform"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
+                    <a href="" class="social-media-platform"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                    <a href="" class="social-media-platform"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+                    <a href="" class="social-media-platform"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+          </footer>
+    </div>
+</body>
+<script src="../js/app.js"></script>
+</html>

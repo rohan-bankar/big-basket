@@ -1,0 +1,21 @@
+.filters{
+    display: flex;
+    margin: 20px 0;
+}
+
+.filter-btn{
+    background-color: #373A40;
+    font-weight: bold;
+}
+
+.relevance-btn{
+    font-weight: bold;
+    position: absolute;
+    right: 140PX;
+}
+
+.relevance-btn:hover{
+    background-color: #373A40;
+    color: white;
+}
+
