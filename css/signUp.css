@@ -6,6 +6,8 @@
     top: 200px;
     left: 500px;
     z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .login-close{
@@ -77,5 +79,8 @@
     margin: 20px 0;
 }
 
-
+.blur-effect {
+    filter: blur(10px);
+    transition: filter 0.3s ease; /* Smooth transition for the blur */
+}
 

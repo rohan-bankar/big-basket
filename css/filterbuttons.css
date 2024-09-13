@@ -19,3 +19,37 @@
     color: white;
 }
 
+.shop-by-category{
+    width: 250px;
+    display: none;
+}
+
+.shopCategory{
+    width: 230px;
+    text-align: left;
+    background-color: #DFEBED;
+    padding: 10px;
+}
+
+.vegetables-cards,
+.fresh-vegetables-cards,
+.ghee-cards,
+.nandini-cards,
+.tea-cards{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.shop-category-close-btn{
+    position: absolute;
+    left: 330px;
+}
+
+.title{
+    color: green;
+    font-weight: bold;
+}
+
+.showMore{
+    color: black;
+}
